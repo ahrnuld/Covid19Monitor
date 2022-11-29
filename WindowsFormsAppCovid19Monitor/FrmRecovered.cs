@@ -17,7 +17,7 @@ namespace WindowsFormsAppCovid19Monitor
             InitializeComponent();
         }
 
-        private void FilllChartRecoverd()
+        private void eFilllChartRecoverd()
         {
 
             //Collection Covid Deaths: CovidDeaths
@@ -32,7 +32,7 @@ namespace WindowsFormsAppCovid19Monitor
 
         private void FrmRecoverd_Load(object sender, EventArgs e)
         {
-            FilllChartRecoverd();
+            eFilllChartRecoverd();
         }
     }
 }
