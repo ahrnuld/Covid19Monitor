@@ -26,7 +26,7 @@ namespace WindowsFormsAppCovid19Monitor
 
         private void recoveredToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmRecoverd frmRecoverd = new FrmRecoverd();
+            FrmRecovered frmRecoverd = new FrmRecovered();
             frmRecoverd.Show();
         }
     }

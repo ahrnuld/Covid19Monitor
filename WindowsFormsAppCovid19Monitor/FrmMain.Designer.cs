@@ -41,7 +41,8 @@
             this.monitorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1191, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
+            this.menuStrip1.Size = new System.Drawing.Size(244, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -51,30 +52,31 @@
             this.confirmedCasesToolStripMenuItem,
             this.recoveredToolStripMenuItem});
             this.monitorToolStripMenuItem.Name = "monitorToolStripMenuItem";
-            this.monitorToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.monitorToolStripMenuItem.Size = new System.Drawing.Size(62, 19);
             this.monitorToolStripMenuItem.Text = "Monitor";
             // 
             // confirmedCasesToolStripMenuItem
             // 
             this.confirmedCasesToolStripMenuItem.Name = "confirmedCasesToolStripMenuItem";
-            this.confirmedCasesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.confirmedCasesToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.confirmedCasesToolStripMenuItem.Text = "Confirmed Cases";
             this.confirmedCasesToolStripMenuItem.Click += new System.EventHandler(this.confirmedCasesToolStripMenuItem_Click);
             // 
             // recoveredToolStripMenuItem
             // 
             this.recoveredToolStripMenuItem.Name = "recoveredToolStripMenuItem";
-            this.recoveredToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recoveredToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.recoveredToolStripMenuItem.Text = "Recovered";
             this.recoveredToolStripMenuItem.Click += new System.EventHandler(this.recoveredToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 530);
+            this.ClientSize = new System.Drawing.Size(244, 230);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FrmMain";
             this.Text = "Covid Monitor";
             this.menuStrip1.ResumeLayout(false);

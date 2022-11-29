@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsAppCovid19Monitor
 {
-    partial class FrmRecoverd
+    partial class FrmRecovered
     {
         /// <summary>
         /// Required designer variable.
@@ -46,15 +46,17 @@
             this.panel1.Controls.Add(this.chartDandR);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1484, 900);
+            this.panel1.Size = new System.Drawing.Size(1268, 1660);
             this.panel1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1396, 725);
+            this.button1.Location = new System.Drawing.Point(2559, 1338);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(138, 42);
             this.button1.TabIndex = 1;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
@@ -62,11 +64,14 @@
             // 
             // chartDandR
             // 
+            chartArea1.AxisY.Minimum = 0D;
+            chartArea1.AxisY2.Minimum = 0D;
             chartArea1.Name = "ChartArea1";
             this.chartDandR.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartDandR.Legends.Add(legend1);
-            this.chartDandR.Location = new System.Drawing.Point(3, 3);
+            this.chartDandR.Location = new System.Drawing.Point(6, 6);
+            this.chartDandR.Margin = new System.Windows.Forms.Padding(6);
             this.chartDandR.Name = "chartDandR";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -78,20 +83,21 @@
             series2.Name = "Recovered";
             this.chartDandR.Series.Add(series1);
             this.chartDandR.Series.Add(series2);
-            this.chartDandR.Size = new System.Drawing.Size(1480, 703);
+            this.chartDandR.Size = new System.Drawing.Size(1254, 498);
             this.chartDandR.TabIndex = 0;
             this.chartDandR.Text = "chartDeathsAndRecovered";
             // 
-            // FrmRecoverd
+            // FrmRecovered
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 761);
+            this.ClientSize = new System.Drawing.Size(1268, 509);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "FrmRecoverd";
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "FrmRecovered";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Recoverd Covid19";
+            this.Text = "Recovered Covid19";
             this.Load += new System.EventHandler(this.FrmRecoverd_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartDandR)).EndInit();
